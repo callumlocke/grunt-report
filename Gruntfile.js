@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
     report: {
       test: {
-        url: 'http://localhost:8000/index.html'
+        url: 'http://localhost:3000/index.html'
       },
       wiki: {
         url: 'http://www.wikipedia.org/'
