@@ -32,7 +32,7 @@ describe('report task', function () {
   // These assertions are a very basic starting point, more work is needed...
 
   it('command exits with an error', function() {
-    console.log('STDOUT\n', stdout);
+    // console.log('STDOUT\n', stdout);
     expect(err).to.exist && expect(err.code).to.equal(1);
   });
 
@@ -42,7 +42,7 @@ describe('report task', function () {
   });
 
   it('prints errors to stderr', function() {
-    console.log('STDERR', stderr);
+    // console.log('STDERR', stderr);
     expect(stderr).to.be.ok;
   });
 });
