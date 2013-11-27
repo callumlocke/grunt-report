@@ -1,0 +1,43 @@
+{
+  "name": "grunt-report",
+  "version": "0.0.1",
+  "description": "Prints out a health report for a live URL",
+  "homepage": "https://github.com/callumlocke/grunt-report",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callumlocke/grunt-report.git"
+  },
+  "bugs": "https://github.com/callumlocke/grunt-report/issues",
+  "author": {
+    "name": "Callum Locke"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "engines": {
+    "node": ">= 0.10.21"
+  },
+  "licenses": [
+    {
+      "type": "BSD"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.0",
+    "jshint-stylish": "~0.1.3",
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0",
+    "grunt-cli": "~0.1.11",
+    "connect": "~2.11.0"
+  },
+  "scripts": {
+    "test": "mocha test/report_test.js"
+  },
+  "dependencies": {
+    "url-report": "0.0.4",
+    "chalk": "~0.3.0",
+    "underscore": "~1.5.2"
+  }
+}
