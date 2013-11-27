@@ -13,11 +13,13 @@ Intended for used at the end of an automated production deploy process, to verif
 Usage
 -----
 
+This is a multitask. Create named targets like this:
+
 ```js
 grunt.initConfig({
   report: {
     options: {
-      consoleMessages: 'ok' // see below for explanation
+      // see below
     },
     wiki: {
       url: 'http://www.wikipedia.org/'
@@ -25,6 +27,8 @@ grunt.initConfig({
   }
 })
 ```
+
+Output from running `grunt report:wiki` with the above config:
 
 ![Terminal output](http://s22.postimg.org/cyft8y369/Screenshot_2013_11_27_17_01_04.png)
 
@@ -53,4 +57,4 @@ All three options accept any of the following values, which correspond to grunt 
 
 `ok` means (a) this type of problem won't cause grunt to halt, and (b) the terminal output will look green and soothing.
 
-For example: if you don't mind console messages in production, you could set `consoleMessages: "ok"`. You'll still see console logs in your terminal, but they won't cause grunt to halt.
+For example: if you don't mind console messages in production, you could set `consoleMessages: "ok"`. You'll still see any console logs in your terminal, but they won't be seen as a problem.
