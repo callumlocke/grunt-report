@@ -7,7 +7,7 @@ Intended for used at the end of an automated production deploy process, to verif
 
 * JavaScript errors
 * console messages
-* failed resource downloads
+* failed resource downloads (images, scripts, etc)
 
 
 Usage
