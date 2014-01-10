@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         grunt.log.ok('None ✔');
       else {
         level = options.javascriptErrors;
-        failIf(level !== 'ok');
+        failIf(level === 'error');
 
         grunt.log[level](report.javascriptErrors.length + ' occurred:');
         report.javascriptErrors.forEach(function (jsError) {
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
         grunt.log.ok('None ✔');
       else {
         level = options.consoleMessages;
-        failIf(level !== 'ok');
+        failIf(level === 'error');
 
         grunt.log[level](report.consoleMessages.length + ' messages:');
         report.consoleMessages.forEach(function (details) {
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         grunt.log.ok('None ✔');
       else {
         level = options.resourceErrors;
-        failIf(level !== 'ok');
+        failIf(level === 'error');
 
         grunt.log[level](report.resourceErrors.length + ' problems:');
         report.resourceErrors.forEach(function (details) {
@@ -95,7 +95,7 @@ module.exports = function (grunt) {
       // If anything failed, tell grunt
       if (failed) {
         console.error('\n');
-        grunt.fatal('Problems were found.');
+        grunt.fatal('Report found errors.');
       }
 
       done();
