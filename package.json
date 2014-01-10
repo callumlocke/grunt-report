@@ -1,6 +1,6 @@
 {
   "name": "grunt-report",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Prints out a health report for a live URL",
   "homepage": "https://github.com/callumlocke/grunt-report",
   "repository": {
